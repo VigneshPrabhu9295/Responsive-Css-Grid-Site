@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="RNVBar.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Responsive Nav Bar</title>
+</head>
+<body>
+   <div class="navbar">
+       <ul>
+           <li><a href="#">
+               <span class="icon"><i class="fa fa-home" class="icon" aria-hidden="true"></i>
+               </span>
+               <span class="title">Home</span></a>
+            </li>
+           <li><a href="#">
+               
+            <span class="icon"><i class="fa fa-user" class="icon" aria-hidden="true"></i>
+            </span>
+
+               <span class="title">Profile</span></a>
+            </li>
+           <li><a href="#">
+               
+            <span class="icon"><i class="fa fa-comment" class="icon" aria-hidden="true"></i>
+            </span>
+               <span class="title">Messages</span></a>
+            </li>
+           <li><a href="#">
+               
+            <span class="icon"><i class="fa fa-question-circle" class="icon" aria-hidden="true"></i>
+            </span>
+               <span class="title">Help</span></a>
+            </li>
+           <li><a href="#">
+               
+            <span class="icon"><i class="fa fa-cog" class="icon" aria-hidden="true"></i>
+            </span>
+               <span class="title">Setting</span></a>
+            </li>
+           <li><a href="#">
+               
+            <span class="icon"><i class="fa fa-unlock-alt" class="icon" aria-hidden="true"></i>
+            </span>
+               <span class="title">Password</span></a>
+            </li>
+           <li><a href="#">
+               
+            <span class="icon"><i class="fa fa-sign-out"  aria-hidden="true"></i>
+            </span>
+               <span class="title">SignOut</span></a>
+            </li>
+        </ul>
+   </div> 
+   <div class="toggle" onclick="toggleMenu()">
+    <i class="fa fa-bars" ></i>
+   </div>
+    <script type="text/javascript">
+    function toggleMenu(){
+       console.log('button clicked');
+       let navigation = document.querySelector('.navbar');
+       let toggle = document.querySelector('.toggle');
+       navigation.classList.toggle('active');
+       toggle.classList.toggle('active');
+
+    }
+
+    </script>
+
+   
+</body>
+</html>

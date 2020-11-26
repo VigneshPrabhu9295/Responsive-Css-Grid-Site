@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: turquoise;
+}
+
+.navbar {
+  height: 100vh;
+  width: 60px;
+  background-color: darkmagenta;
+  transition: 0.5s linear;
+  overflow: hidden;
+  position: relative;
+}
+
+.navbar:hover,
+.navbar.active {
+  width: 250px;
+}
+
+.navbar ul {
+  position: relative;
+  text-decoration: none;
+}
+.navbar ul li {
+  list-style: none;
+  width: 100%;
+}
+
+.navbar ul li :hover {
+  background-color: deeppink;
+}
+
+.navbar ul li a {
+  display: flex;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar ul li a .icon {
+  min-width: 60px;
+  line-height: 60px;
+  text-align: center;
+  height: 60px;
+}
+
+.navbar ul li a .title {
+  line-height: 60px;
+}
+
+.toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background-color: blueviolet;
+  cursor: pointer;
+}
+.toggle i {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 60px;
+}
+
+.toggle :before {
+  content: "\f0c9";
+  font-family: fontAwesome;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.toggle :hover::before {
+  content: "\f00d";
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    left: -60px;
+  }
+  .navbar.active {
+    left: 0;
+    width: 100%;
+  }
+}
